@@ -1,6 +1,7 @@
 import React from 'react'
 import Dashboard from '@/components/layout/Dashboard'
 import SubtaskTable from '@/components/subtask/SubtaskTable'
+import CommentSection from '@/components/comment/CommentSection'
 
 function taskDetail
 ({id}) {
@@ -8,6 +9,7 @@ function taskDetail
     <Dashboard>
       <h1 className='text-3xl font-semibold mb-5'>Table Subtask</h1>
         <SubtaskTable id={id}></SubtaskTable>
+        <CommentSection id={id}></CommentSection>
     </Dashboard>
   )
 }
