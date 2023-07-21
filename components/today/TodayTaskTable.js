@@ -86,7 +86,7 @@ function TodayTaskTable({ id }) {
 
   const formattedToday = `${year}-${month}-${day}`;
 
-  const tasksToday = tasks.filter((task) => task.dueDate > formattedToday);
+  const tasksToday = tasks.filter((task) => task.dueDate <= formattedToday);
 
   return (
     <div className="sm:px-6 w-full">
